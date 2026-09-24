@@ -3,74 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mathew Franklin | Software Developer, AI &amp; Data Science</title>
-  <meta name="description" content="Portfolio of Mathew Franklin, a final-year B.Tech Artificial Intelligence and Data Science student building with Python, Angular and MySQL.">
+  <title>Mathew Franklin | AI &amp; Data Science Student and Software Developer</title>
+  <meta name="description" content="Portfolio of Mathew Franklin, a final-year B.Tech AI &amp; Data Science student building web apps and intelligent tools with Python, Angular and MySQL.">
+  <meta name="theme-color" content="#16181D">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+  <a class="skip" href="#about">Skip to content</a>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Main">
+  <header class="nav">
+    <div class="wrap nav-inner">
       <a class="logo" href="#home">Mathew Franklin</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#assistant">AI Assistant</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#assistant">AI Assistant</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="wrap">
-        <h1 class="hero-name">Mathew Franklin</h1>
-        <p class="hero-tagline">Aspiring software developer working across AI, data science and the web</p>
-        <p class="hero-intro">I'm a final-year B.Tech student in Artificial Intelligence and Data Science at Anna University. I build task apps in Angular and MySQL, analyse real datasets in Python, and experiment with chatbots that understand language. I'm looking for a software developer role where I can keep learning and ship useful things.</p>
+      <div class="wrap hero-inner">
+        <p class="hero-role">Final-year B.Tech, AI &amp; Data Science</p>
+        <h1>Mathew<br>Franklin</h1>
+        <p class="tagline">I build web apps and intelligent tools with Python, Angular and MySQL.</p>
+        <p class="intro">I'm a final-year Artificial Intelligence and Data Science student at Anna University, based in Kottaram, Kanniyakumari. I'm looking for a Software Developer role where I can bring AI, data science and web development together to build efficient, scalable and user-friendly solutions.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">See my projects</a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#assistant">Talk to my AI assistant</a>
         </div>
       </div>
     </section>
 
     <section class="section" id="about">
-      <div class="wrap narrow reveal">
-        <h2>About</h2>
-        <p>I want to secure a challenging position as a Software Developer where I can use my skills in Artificial Intelligence, Data Science and Web Development to build efficient, scalable and user-friendly solutions. I aim to keep learning, contribute to innovative projects, and grow as a professional while adding value to the organisation.</p>
-        <dl class="facts">
-          <div><dt>Degree</dt><dd>B.Tech in Artificial Intelligence and Data Science, Anna University (2022 to 2026)</dd></div>
-          <div><dt>School</dt><dd>Government Higher Secondary School, Kottaram</dd></div>
-          <div><dt>Based in</dt><dd>Kottaram, Kanniyakumari</dd></div>
-          <div><dt>Languages</dt><dd>English, Tamil</dd></div>
-        </dl>
+      <div class="wrap about-grid">
+        <h2 class="reveal">About me</h2>
+        <div class="reveal">
+          <p class="lead">My goal is to secure a challenging position as a Software Developer where I can use my skills in Artificial Intelligence, Data Science and Web Development to build efficient, scalable and user-friendly solutions.</p>
+          <p>I want to keep learning, contribute to innovative projects, and grow as a professional while adding value to the organization I join.</p>
+          <dl class="edu">
+            <div>
+              <dt>B.Tech in Artificial Intelligence and Data Science</dt>
+              <dd>Anna University, 2022&ndash;2026</dd>
+            </div>
+            <div>
+              <dt>Secondary school</dt>
+              <dd>Government Higher Secondary School, Kottaram</dd>
+            </div>
+            <div>
+              <dt>Languages</dt>
+              <dd>English, Tamil</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <section class="section alt" id="skills">
-      <div class="wrap reveal">
-        <h2>Skills</h2>
-        <div class="skill-groups">
-          <div class="skill-group">
+    <section class="section section-tint" id="skills">
+      <div class="wrap">
+        <h2 class="reveal">Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-group reveal">
             <h3>Programming languages</h3>
             <ul class="tags"><li>Python</li><li>JavaScript</li></ul>
           </div>
-          <div class="skill-group">
+          <div class="skill-group reveal">
             <h3>Web technologies</h3>
             <ul class="tags"><li>HTML</li><li>CSS</li><li>Angular</li></ul>
           </div>
-          <div class="skill-group">
+          <div class="skill-group reveal">
             <h3>Database</h3>
             <ul class="tags"><li>MySQL</li></ul>
           </div>
-          <div class="skill-group">
+          <div class="skill-group reveal">
             <h3>Core concepts</h3>
             <ul class="tags"><li>Machine Learning (basics)</li><li>Data Analysis</li></ul>
           </div>
@@ -79,57 +94,60 @@
     </section>
 
     <section class="section" id="projects">
-      <div class="wrap reveal">
-        <h2>Projects</h2>
-        <div class="cards">
-          <article class="card">
+      <div class="wrap">
+        <h2 class="reveal">Projects</h2>
+        <div class="project-grid">
+          <article class="card reveal">
             <h3>Task Manager Web Application</h3>
-            <p>A task management app built with Angular on the frontend and MySQL on the backend. Users can add, update, delete and track tasks efficiently.</p>
-            <ul class="tags small"><li>Angular</li><li>MySQL</li></ul>
-            <!-- TODO: replace "#" with the GitHub or live demo link for this project -->
-            <a class="card-link" href="#">View project</a>
+            <p>A task management app built with Angular on the frontend and MySQL on the backend. You can add, update, delete and track tasks efficiently.</p>
+            <ul class="tags"><li>Angular</li><li>MySQL</li></ul>
+            <!-- TODO: replace "#" with this project's GitHub or live demo link -->
+            <a class="card-link" href="#" data-placeholder>View project</a>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Data Analysis Project</h3>
-            <p>Exploratory data analysis on a real-world dataset, pulling out valuable insights and visualising trends with Python.</p>
-            <ul class="tags small"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li></ul>
-            <!-- TODO: replace "#" with the GitHub or notebook link for this project -->
-            <a class="card-link" href="#">View project</a>
+            <p>Exploratory data analysis on a real-world dataset, using Python to pull out valuable insights and visualize trends.</p>
+            <ul class="tags"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li></ul>
+            <!-- TODO: replace "#" with this project's GitHub or notebook link -->
+            <a class="card-link" href="#" data-placeholder>View project</a>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>AI Chatbot using Python</h3>
             <p>A simple AI-powered chatbot that uses natural language processing techniques to understand and respond to user queries.</p>
-            <ul class="tags small"><li>Python</li><li>Natural language processing</li></ul>
-            <!-- TODO: replace "#" with the GitHub or live demo link for this project -->
-            <a class="card-link" href="#">View project</a>
+            <ul class="tags"><li>Python</li><li>Natural language processing</li></ul>
+            <!-- TODO: replace "#" with this project's GitHub link -->
+            <a class="card-link" href="#" data-placeholder>View project</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="assistant">
-      <div class="wrap reveal">
-        <h2>Talk to my AI Assistant</h2>
-        <p class="lead">Ask it about my skills, projects or background and get an answer without digging through the page.</p>
-        <iframe class="assistant-frame" src="https://mathewportfolio-mrw9ehrrvywarysjcvk9ya.streamlit.app/?embed=true" title="Mathew Franklin's AI Assistant" width="100%" height="600" style="border:0" loading="lazy"></iframe>
-        <p class="frame-note">Not loading? <a href="https://mathewportfolio-mrw9ehrrvywarysjcvk9ya.streamlit.app/" target="_blank" rel="noopener">Open the assistant in a new tab</a>. It may take a few seconds to wake up.</p>
+    <section class="section section-dark" id="assistant">
+      <div class="wrap">
+        <h2 class="reveal">Talk to my AI assistant</h2>
+        <p class="lead reveal">Ask about my skills, projects or background and get an answer straight away. The assistant is a Python app running on Streamlit.</p>
+        <div class="frame reveal">
+          <iframe src="https://mathewportfolio-mrw9ehrrvywarysjcvk9ya.streamlit.app/" title="Mathew Franklin's AI assistant" width="100%" height="600" style="border:0;" loading="lazy" allow="clipboard-write"></iframe>
+        </div>
+        <p class="frame-note reveal">The assistant can take a few seconds to wake up. If it doesn't load, <a href="https://mathewportfolio-mrw9ehrrvywarysjcvk9ya.streamlit.app/" target="_blank" rel="noopener noreferrer">open it in a new tab</a>.</p>
       </div>
     </section>
   </main>
 
-  <footer class="section" id="contact">
-    <div class="wrap narrow reveal">
-      <h2>Contact</h2>
-      <p class="lead">I'm open to software developer roles and internships. The quickest way to reach me is email.</p>
+  <footer class="footer" id="contact">
+    <div class="wrap">
+      <h2>Let's work together</h2>
+      <p class="lead">I'm open to Software Developer roles. The quickest way to reach me is email.</p>
       <ul class="contact-list">
         <li><span>Email</span><a href="mailto:mathewfranklin406@gmail.com">mathewfranklin406@gmail.com</a></li>
         <li><span>Phone</span><a href="tel:+919385422040">9385422040</a></li>
         <!-- TODO: replace "#" with your LinkedIn profile URL -->
-        <li><span>LinkedIn</span><a href="#">LinkedIn profile</a></li>
+        <li><span>LinkedIn</span><a href="#" data-placeholder>Add your LinkedIn link</a></li>
         <!-- TODO: replace "#" with your GitHub profile URL -->
-        <li><span>GitHub</span><a href="#">GitHub profile</a></li>
+        <li><span>GitHub</span><a href="#" data-placeholder>Add your GitHub link</a></li>
+        <li><span>Location</span>Kottaram, Kanniyakumari</li>
       </ul>
-      <p class="copy">&copy; <span id="year">2026</span> Mathew Franklin. Kottaram, Kanniyakumari.</p>
+      <p class="copy">&copy; Mathew Franklin. Built with plain HTML, CSS and JavaScript.</p>
     </div>
   </footer>
 
